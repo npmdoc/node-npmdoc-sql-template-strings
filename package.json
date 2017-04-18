@@ -1,1 +1,39 @@
-{     "devDependencies": {         "sql-template-strings": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-sql-template-strings",     "homepage": "https://github.com/npmdoc/node-npmdoc-sql-template-strings",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-sql-template-strings.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### api documentation for  [sql-template-strings (v2.2.2)](https://github.com/felixfbecker/node-sql-template-strings#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-sql-template-strings.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sql-template-strings) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sql-template-strings.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sql-template-strings)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "sql-template-strings": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-sql-template-strings",
+    "keywords": [
+        "documentation",
+        "sql-template-strings"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_sql_template_strings.js",
+    "name": "npmdoc-sql-template-strings",
+    "nameAlias": "npmdoc_sql_template_strings",
+    "nameOriginal": "npmdoc-sql-template-strings",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-sql-template-strings.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
