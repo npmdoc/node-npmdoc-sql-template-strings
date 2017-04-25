@@ -1,6 +1,6 @@
 # npmdoc-sql-template-strings
 
-#### api documentation for  [sql-template-strings (v2.2.2)](https://github.com/felixfbecker/node-sql-template-strings#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-sql-template-strings.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sql-template-strings) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sql-template-strings.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sql-template-strings)
+#### basic api documentation for  [sql-template-strings (v2.2.2)](https://github.com/felixfbecker/node-sql-template-strings#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-sql-template-strings.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sql-template-strings) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sql-template-strings.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sql-template-strings)
 
 #### ES6 tagged template strings for prepared statements with mysql and postgres
 
@@ -86,7 +86,8 @@
         "typedoc": "typedoc --module es2015 --target es2015 --includeDeclarations --mode file --readme none --out typedoc index.d.ts"
     },
     "typings": "index.d.ts",
-    "version": "2.2.2"
+    "version": "2.2.2",
+    "bin": {}
 }
 ```
 
